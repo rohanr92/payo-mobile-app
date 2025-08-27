@@ -300,3 +300,15 @@ document.getElementById('withdrawns-money').style.display = 'none';
 document.getElementById('added-money').style.display = 'none';
 })
 
+
+
+
+
+// log out button config
+
+
+let logOut = document.getElementById('log-out');
+logOut.addEventListener('click', function(e) {
+    window.location.href = './index.html';
+})
+

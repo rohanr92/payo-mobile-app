@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./style.css" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="h-full bg-[#f4f5f7]">
+
+    <div class="max-w-[450px] mx-auto bg-[#FFFFFF] border border-gray-200 border-b-0">
+        <div
+            class="w-[100%] flex justify-between p-[15px] border-b-[1.4px] border-gray-200 items-center content-center">
+            <div class="flex items-center justify-center">
+                <img src="./assets/Group.png" alt="" class="bg-cover object-cover">
+                <div>
+                    <h2 class="font-outfit font-extrabold text-[18px]">$<span id="main-amount">45000</span></h2>
+                    <p class="text-[rgba(8,8,8,0.5)] font-outfit font-normal text-[14px]">Available Balance</p>
+                </div>
+            </div>
+            <div>
+                <button class="btn bg-[#ffffff] text-[rgba(8,8,8,0.5)] font-outfit font-normal text-[14px]"><i
+                        class="fa-solid fa-arrow-right-from-bracket text-[#666768] rotate-[180deg]"></i> Log
+                    Out</button>
+            </div>
+        </div>
+        <div class="mt-[8px] mb-[0px] p-[15px]">
+            <h2 class="font-outfit text-[#080808] text-[24px] font-bold">🔥 Welcome to Payooo!</h2>
+            <p class="text-[rgba(8,8,8,0.5)] font-outfit font-normal text-[16px] mt-[12px]">Enjoy easy and convenient
+                financial services with us. Cashout charge is low and </p>
+        </div>
+        <div class="grid grid-cols-3 grid-rows-2 gap-[16.5px] p-[15px]">
+            <div
+                class="content-center justify-center items-center flex flex-col border-2 border-[rgba(8,8,8,0.1)] gap-[8px] rounded-2xl p-[8px]  hover:border-[1px] hover:border-[#0874F2] cursor-pointer" id="add-money-click">
+                <img src="./assets/wallet1.png" alt="">
+                <p class="text-[rgba(8,8,8,1)] font-outfit font-normal text-[14px]" id="add-money-text">Add Money</p>
+            </div>
+            <div
+                class="content-center justify-center items-center flex flex-col border-2 border-[rgba(8,8,8,0.1)] gap-[8px] rounded-2xl p-[20px] hover:border-[1px] hover:border-[#0874F2] cursor-pointer" id="cashout-money-design">
+                <img src="./assets/wallet1.png" alt="">
+                <p class="text-[rgba(8,8,8,1)] font-outfit font-normal text-[14px]" id="cash-out-text">Cash Out</p>
+            </div>
+            <div
+                class="content-center justify-center items-center flex flex-col border-2 border-[rgba(8,8,8,0.1)] gap-[8px] rounded-2xl p-[2px] hover:border-[1px] hover:border-[#0874F2] cursor-pointer" id="transfer-money">
+                <img src="./assets/wallet1.png" alt="">
+                <p class="text-[rgba(8,8,8,1)] font-outfit font-normal text-[14px]" id="transfer-money-text">Transfer Money</p>
+            </div>
+            <div
+                class="content-center justify-center items-center flex flex-col border-2 border-[rgba(8,8,8,0.1)] gap-[8px] rounded-2xl p-[20px] hover:border-[1px] hover:border-[#0874F2] cursor-pointer" id="get-bonus">
+                <img src="./assets/wallet1.png" alt="">
+                <p class="text-[rgba(8,8,8,1)] font-outfit font-normal text-[14px]">Get Bonus</p>
+            </div>
+            <div
+                class="content-center justify-center items-center flex flex-col border-2 border-[rgba(8,8,8,0.1)] gap-[8px] rounded-2xl p-[20px] hover:border-[1px] hover:border-[#0874F2] cursor-pointer">
+                <img src="./assets/wallet1.png" alt="">
+                <p class="text-[rgba(8,8,8,1)] font-outfit font-normal text-[14px]">Pay Bill</p>
+            </div>
+            <div
+                class="content-center justify-center items-center flex flex-col border-2 border-[rgba(8,8,8,0.1)] gap-[8px] rounded-2xl p-[20px] hover:border-[1px] hover:border-[#0874F2] cursor-pointer">
+                <img src="./assets/wallet1.png" alt="">
+                <p class="text-[rgba(8,8,8,1)] font-outfit font-normal text-[14px]">Transactions</p>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="transform">
+
+        <div class="max-w-[450px] mx-auto p-[15px] border border-gray-200 border-t-0">
+            <div class="mb-[20px] mt-[15px]">
+                <h2 class="font-outfit font-semibold text-[18px]">Add Money</h2>
+            </div>
+            <!-- Add Money Form -->
+
+            <div class="bg-white p-[25px] rounded-2xl">
+                <div>
+                    <!-- Dropdown Starts From Here -->
+
+                    <div class="dropdown w-[100%]">
+                        <h2 class="font-outfit font-medium text-[16px]">Select A Bank</h2>
+
+                    </div>
+                    <div class="relative inline-block w-[100%] mt-[8px] mb-[16px]">
+                        <select name="Select A bank" id=""
+                            class="w-full appearance-none rounded-full bg-[#f4f5f7] px-4 py-3 pr-10 outline-1 outline-gray-300 focus:outline-1 text-[#757575] pl-3 font-outfit font-light text-[16px]">
+                            <Option class="text-[16px] font-outfit font-light text-[#757575] text-8xl" selected
+                                disabled>Select a Bank</Option>
+                            <Option>Islami Bank PLC</Option>
+                            <Option>Eastern Bank Ltd</Option>
+                            <Option>Trust Secure Bank</Option>
+                            <Option>Jamuna Bank PLC</Option>
+                            <Option>IFIC Bank Ltd</Option>
+                        </select>
+
+                        <div class="pointer-events-none absolute inset-y-0 right-4 flex items-center">
+                            <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
+                    </div>
+                    <!-- Dropdown Stops From Here -->
+
+                    <div>
+
+                        <label class="font-outfit font-medium text-[16px]">Bank Account Number</label><br>
+                        <input type="text" placeholder="Enter 11 digit account number"
+                            class="input input-lg w-[100%] rounded-3xl mt-[8px] mb-[16px] bg-[#F4F5F7] text-[16px] font-outfit font-light text-[#757575] focus:outline-0" /><br>
+                        <!-- Amount To Add -->
+                        <label class="font-outfit font-medium text-[16px]">Amount to Add</label><br>
+                        <input type="text" id="amount-add" placeholder="Add Amount to Here"
+                            class="input input-lg w-[100%] rounded-3xl mt-[8px] mb-[16px] bg-[#F4F5F7] text-[16px] font-outfit font-light text-[#757575] focus:outline-0" /><br>
+
+                        <label class="font-outfit font-medium text-[16px]">4 Digit Pin</label><br>
+                        <input type="text" placeholder="Enter Your Pin" id="pin-number"
+                            class="input input-lg w-[100%] rounded-3xl mb-[16px] mt-[8px] bg-[#F4F5F7] text-[16px] font-outfit font-light text-[#757575] focus:outline-0" />
+                        <button
+                            class="btn btn-active w-[100%] bg-[#0874F2] outline-0 border-0 text-[white] rounded-3xl py-[23px]"
+                            id="add-money-btn">Add Money</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <!-- Money SuccessFully Added Section -->
+
+    <div class="h-[520px] max-w-[450px] mx-auto p-[15px] hidden border border-gray-200 border-t-0 bg-[#f4f5f7]" id="added-money">
+        <div class="flex flex-col items-center justify-center content-center gap-[20px] h-full bg-white rounded-2xl ">
+            <img src="./assets/success.svg" alt="" srcset="" height="100px" width="100px">
+            <h2 class="text-[24px] font-bold font-outfit text-black">Money Added SuccessFully</h2>
+        </div>
+    </div>
+
+
+    <!-- Cash Out form -->
+
+
+
+
+
+
+    <div id="cashout-transform" class="hidden">
+
+        <div class="max-w-[450px] mx-auto p-[15px] border border-gray-200 border-t-0">
+            <div class="mb-[20px] mt-[15px]">
+                <h2 class="font-outfit font-semibold text-[18px]">Cash Out</h2>
+            </div>
+            <!-- Add Money Form -->
+
+            <div class="bg-white p-[25px] rounded-2xl">
+                <div>
+
+                    <div>
+
+                        <label class="font-outfit font-medium text-[16px]">Agent Number</label><br>
+                        <input type="text" placeholder="Enter 11 digit account number"
+                            class="input input-lg w-[100%] rounded-3xl mt-[8px] mb-[16px] bg-[#F4F5F7] text-[16px] font-outfit font-light text-[#757575] focus:outline-0" /><br>
+                        <!-- Amount To Add -->
+                        <label class="font-outfit font-medium text-[16px]">Amount</label><br>
+                        <input type="text" id="amount-cash-out" placeholder="Enter amount to withdraw"
+                            class="input input-lg w-[100%] rounded-3xl mt-[8px] mb-[16px] bg-[#F4F5F7] text-[16px] font-outfit font-light text-[#757575] focus:outline-0" /><br>
+
+                        <label class="font-outfit font-medium text-[16px]">Pin Number</label><br>
+                        <input type="text" placeholder="Enter Your Pin" id="pin-number2"
+                            class="input input-lg w-[100%] rounded-3xl mb-[16px] mt-[8px] bg-[#F4F5F7] text-[16px] font-outfit font-light text-[#757575] focus:outline-0" />
+                        <button
+                            class="btn btn-active w-[100%] bg-[#0874F2] outline-0 border-0 text-[white] rounded-3xl py-[23px]"
+                            id="cash-out-btn">Withdraw Money</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Money SuccessFully Added Section -->
+
+    <div class="h-[520px] max-w-[450px] mx-auto p-[15px] hidden border border-gray-200 border-t-0 bg-[#f4f5f7]" id="withdrawn-money">
+        <div class="flex flex-col items-center justify-center content-center gap-[20px] h-full bg-white rounded-2xl ">
+            <img src="./assets/success.svg" alt="" srcset="" height="100px" width="100px">
+            <h2 class="text-[24px] font-bold font-outfit text-black">Money Withdrawn SuccessFully</h2>
+        </div>
+    </div>
+
+
+
+
+    <!-- Transfer Money Form -->
+
+
+
+
+    <div id="transfer-transform" class="hidden">
+
+        <div class="max-w-[450px] mx-auto p-[15px] border border-gray-200 border-t-0">
+            <div class="mb-[20px] mt-[15px]">
+                <h2 class="font-outfit font-semibold text-[18px]">Transfer Money</h2>
+            </div>
+            <!-- Transfer -->
+
+            <div class="bg-white p-[25px] rounded-2xl">
+                <div>
+
+                    <div>
+
+                        <label class="font-outfit font-medium text-[16px]">User Account Number</label><br>
+                        <input type="text" placeholder="Enter 11 digit account number"
+                            class="input input-lg w-[100%] rounded-3xl mt-[8px] mb-[16px] bg-[#F4F5F7] text-[16px] font-outfit font-light text-[#757575] focus:outline-0" /><br>
+                        <!-- Amount To Add -->
+                        <label class="font-outfit font-medium text-[16px]">Amount</label><br>
+                        <input type="text" id="transfer-amount" placeholder="Enter amount to transfer"
+                            class="input input-lg w-[100%] rounded-3xl mt-[8px] mb-[16px] bg-[#F4F5F7] text-[16px] font-outfit font-light text-[#757575] focus:outline-0" /><br>
+
+                        <label class="font-outfit font-medium text-[16px]">Pin Number</label><br>
+                        <input type="text" placeholder="Enter Your Pin" id="transfer-pin"
+                            class="input input-lg w-[100%] rounded-3xl mb-[16px] mt-[8px] bg-[#F4F5F7] text-[16px] font-outfit font-light text-[#757575] focus:outline-0" />
+                        <button
+                            class="btn btn-active w-[100%] bg-[#0874F2] outline-0 border-0 text-[white] rounded-3xl py-[23px]"
+                            id="transfer-button">Transfer Money</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Money SuccessFully Added Section -->
+
+    <div class="h-[520px] max-w-[450px] mx-auto p-[15px] hidden border border-gray-200 border-t-0 bg-[#f4f5f7]" id="withdrawns-money">
+        <div class="flex flex-col items-center justify-center content-center gap-[20px] h-full bg-white rounded-2xl ">
+            <img src="./assets/success.svg" alt="" srcset="" height="100px" width="100px">
+            <h2 class="text-[24px] font-bold font-outfit text-black">Money Transfer SuccessFully</h2>
+        </div>
+    </div>
+
+
+
+
+    <!-- Get bonus or Coupon Form -->
+
+
+     <div id="cupon-section" class="hidden">
+
+        <div class="max-w-[450px] mx-auto p-[15px] border border-gray-200 border-t-0">
+            <div class="mb-[20px] mt-[15px]">
+                <h2 class="font-outfit font-semibold text-[18px]">Transfer Money</h2>
+            </div>
+            <!-- Transfer -->
+
+            <div class="bg-white p-[25px] rounded-2xl">
+                <div>
+
+                    <div>
+
+                        <label class="font-outfit font-medium text-[16px]">Enter Bonus Coupon</label><br>
+                        <input type="text" placeholder="Enter your coupon"
+                            class="input input-lg w-[100%] rounded-3xl mt-[8px] mb-[16px] bg-[#F4F5F7] text-[16px] font-outfit font-light text-[#757575] focus:outline-0" id="cupon-value"/><br>
+
+
+                            <!-- Warning Text Shown -->
+
+
+        <div role="alert" class="alert alert-error alert-soft mb-[16px] hidden" id="cuopon-invalid">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0 stroke-current" fill="none" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+  </svg>
+  <span>Error! Your Coupon is Invalid.</span>
+</div>
+
+
+
+
+
+                        <button
+                            class="btn btn-active w-[100%] bg-[#0874F2] outline-0 border-0 text-[white] rounded-3xl py-[23px]"
+                            id="cuopon-button">Get Bonus</button>
+                    </div>
+                </div>
+            </div>
+
+         
+        </div>
+
+    </div>
+
+    <!-- Money SuccessFully Added Section -->
+
+    <div class="h-[520px] max-w-[450px] mx-auto p-[15px] hidden border border-gray-200 border-t-0 bg-[#f4f5f7]" id="coupon-added">
+        <div class="flex flex-col items-center justify-center content-center gap-[20px] h-full bg-white rounded-2xl ">
+            <img src="./assets/success.svg" alt="" srcset="" height="100px" width="100px">
+            <h2 class="text-[24px] font-bold font-outfit text-black text-center">Coupon Added SuccessFully And Added <span id="money-change-coupon">200</span></h2>
+        </div>
+    </div>
+
+    <script src="./dashboard.js"></script>
+</body>
+
+</html>

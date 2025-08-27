@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DaisyUI Test</title>
+  <link href="./style.css" rel="stylesheet">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="h-screen bg-[#f4f5f7]">
+<main class="h-full">
+    
+    <div  class="h-[100%] flex justify-center items-center p-[15px] flex-col">
+        <div class="w-[270px] h-[120px] bg-[url(./assets/bg.png)] bg-cover flex justify-center items-center">
+            <img src="./assets/Group.png" alt="">
+        </div>
+        <div class="bg-white h-[330px] content-center p-[25px] rounded-2xl">
+            <div>
+            <label class="font-outfit font-medium text-[16px]">Bank Account Number</label><br>
+            <input type="text" placeholder="Enter Your Number" class="input input-lg w-[100%] rounded-3xl mt-[8px] mb-[16px] bg-[#F4F5F7]" id="bank-account"/><br>
+            <label class="font-outfit font-medium text-[16px]">4 Digit Pin</label><br>
+            <input type="text" placeholder="Enter Your Pin" class="input input-lg w-[100%] rounded-3xl mb-[16px] mt-[8px] bg-[#F4F5F7]" id="pin-number"/>
+            <button class="btn btn-active w-[100%] bg-[#0874F2] outline-0 border-0 text-[white] rounded-3xl py-[23px]" id="login-btn">Login</button>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

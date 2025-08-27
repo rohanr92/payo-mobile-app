@@ -165,6 +165,7 @@ let cashOutMoneyClick = document.getElementById('cashout-money-design');
 cashOutMoneyClick.addEventListener('click', function(){
     document.getElementById('transform').style.display = 'none';
      document.getElementById('transfer-transform').style.display = 'none';
+     document.getElementById('cupon-section').style.display = 'none';
     document.getElementById('cashout-transform').style.display = 'block';
     cashOutMoneyClick.style.backgroundColor = 'rgba(8,116,242,0.05)';
     cashOutMoneyClick.style.border = '1px';
@@ -222,6 +223,7 @@ let transferMoneyText = document.querySelector('#transfer-money-text');
 let transferMoneyClick = document.getElementById('transfer-money');
 transferMoneyClick.addEventListener('click', function(){
     document.getElementById('transform').style.display = 'none';
+    document.getElementById('cupon-section').style.display = 'none';
     document.getElementById('cashout-transform').style.display = 'none';
     document.getElementById('transfer-transform').style.display = 'block';
     transferMoneyClick.style.backgroundColor = 'rgba(8,116,242,0.05)';

@@ -4,9 +4,8 @@ console.log('connected');
 
 
 let logOut = document.getElementById('log-out');
-logOut.addEventListener('click', function(e) {
-    e.preventDefault();
-    window.location.href = './index.html';
+logOut.addEventListener('click', function() {
+    window.location.href = 'index.html';
 })
 
 

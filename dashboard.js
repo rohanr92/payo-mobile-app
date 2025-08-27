@@ -146,6 +146,7 @@ cashOutButton.addEventListener('click', function(e){
     if(pinNumber2 === bankAccountPass) {
         mainAmount.innerText = finalTotalAmount;
         alternativeSection;
+        document.getElementById('cupon-section').style.display = 'none';
 
         withdrawnMoney;
     } else{
@@ -204,6 +205,7 @@ transferMoneyButton.addEventListener('click', function(e){
     if(pinNumber2 === bankAccountPass) {
         mainAmount.innerText = finalTotalAmount;
         transformOpen;
+        document.getElementById('cupon-section').style.display = 'none';
 
         hideSection;
     } else{
@@ -291,7 +293,7 @@ bonusClick.addEventListener('click', function(){
     document.getElementById('transform').style.display = 'none';
     document.getElementById('cashout-transform').style.display = 'none';
     document.getElementById('transfer-transform').style.display = 'none';
-    document.getElementById('cupon-section').style.display = 'block';bonusClick
+    document.getElementById('cupon-section').style.display = 'block';
     bonusClick.style.backgroundColor = 'rgba(8,116,242,0.05)';
     bonusClick.style.border = '1px';
     bonusClick.style.borderStyle = 'solid';

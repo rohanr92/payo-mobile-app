@@ -1,5 +1,13 @@
 console.log('connected');
 
+// log out button config
+
+
+let logOut = document.getElementById('log-out');
+logOut.addEventListener('click', function(e) {
+    e.preventDefault();
+    window.location.href = './index.html';
+})
 
 
 // reset transfer style
@@ -304,11 +312,4 @@ document.getElementById('added-money').style.display = 'none';
 
 
 
-// log out button config
-
-
-let logOut = document.getElementById('log-out');
-logOut.addEventListener('click', function(e) {
-    window.location.href = './index.html';
-})
 
